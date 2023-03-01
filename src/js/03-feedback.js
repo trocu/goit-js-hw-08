@@ -16,7 +16,6 @@ function saveInput(e) {
     email: email.value,
     message: message.value,
   };
-  //   console.log(clientData);
   window.localStorage.setItem(FEEDBACK, JSON.stringify(clientDataInput));
 }
 

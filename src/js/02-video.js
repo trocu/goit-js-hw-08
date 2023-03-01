@@ -5,7 +5,6 @@ const player = new Player('vimeo-player', {});
 
 const TIMESTAMP = 'videoplayer-current-time';
 const onPlay = e => {
-  // console.log(e.seconds);
   window.localStorage.setItem(TIMESTAMP, e.seconds);
 };
 
