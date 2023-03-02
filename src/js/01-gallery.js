@@ -8,7 +8,7 @@ const galleryList = document.querySelector('.gallery');
 const galleryMarkup = galleryItems
   .map(
     image =>
-      `<div class="gallery__item"><a class="gallery__link" href="${image.original}"><img class="gallery__image" src="${image.preview}" alt="${image.description}" /></a></div>`
+      `<a class="gallery__item" href="${image.original}"><img class="gallery__image" src="${image.preview}" alt="${image.description}" /></a>`
   )
   .join('');
 
