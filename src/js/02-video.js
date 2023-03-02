@@ -10,5 +10,5 @@ const onPlay = e => {
 
 player.on('timeupdate', throttle(onPlay, 1000));
 
-//Check if there is a replay time stored in localStorage, if false (null) return last value (0)
+//Check if there's a timestamp in localStorage, if false (null) return last value (0)
 player.setCurrentTime(JSON.parse(window.localStorage.getItem(TIMESTAMP)) || 0);
